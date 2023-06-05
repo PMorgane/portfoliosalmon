@@ -20,10 +20,10 @@ window.addEventListener('load',()=>{
     const TL = gsap.timeline({paused: true});
     TL
     .staggerFrom(header , 2 , {y:-100 , opacity:0, ease: "power2.out"}, 0.1)
-    .staggerFrom(img , 1 , {x:1000 , opacity:0, ease: "power2.out"}, 0.3)
+    .staggerFrom(img , 1 , {x:1000 , opacity:0, ease: "power2.out"}, 0.1)
     .staggerFrom(title_span, 1 , {opacity:0, ease: "power2.out"}, 0.1)
-    .staggerFrom(p, 1 , {opacity:0, ease: "power2.out"}, 0.2)
-    .staggerFrom(a , 1 , {opacity:0, ease: "power2.out"}, 0.3)
+    .staggerFrom(p, 1 , {opacity:0, ease: "power2.out"}, 0.1)
+    .staggerFrom(a , 1 , {opacity:0, ease: "power2.out"}, 0.1)
     
     TL.play()
 })
@@ -51,3 +51,17 @@ const textLoad = () => {
 }
 textLoad();
 setInterval(textLoad,15000);
+
+
+
+/*titre*/ 
+const allLetters = document.querySelectorAll('.bloc span');
+const ligne = document.querySelector('.ligne');
+
+const TLLetters = gsap.timeline();
+
+TLLetters
+.from(ligne, {width: '0%', opacity: 0, duration: 0.7, ease: "power1.in"})
+
+.from (allLetters,{opacity:0, top: gsap.utils.wrap([100,-100]),stagger:0.1, ease:"power2.out"})
+.set(ligne,{width:"85vw"})

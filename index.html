@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu hamburger</title>
+    <title>PASSARELLI Morgane</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9355b4cfde.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 
@@ -19,9 +20,10 @@
         <div class="menu_toggle"></div>
 
         <ul class="menu">
-            <li><a href="#">Acceuil</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Projets</a></li>
+            
+            <li><a href="#video">Video</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#outils">Outils</a></li>
             <li><a href="mailto:passarellimorgane43@gmail.com">Contact</a></li>
             <li class="dowload_li"><a href="./CV Passarelli Morgane.pdf">CV</a></li>
         </ul>
@@ -38,26 +40,212 @@
         <!--Div gauche-->
         <div class="left">
 
-            <!-- <h1>
-            <span>Je</span>
-            <span>suis</span>
-            <span>developeuse</span>
-            <span>web</span>
-            </h1>-->
-            <p>Anciennement aide soignante durant une période de 8ans, j’ai commencé une reconversion professionnelle en 2020 en suivant un DAEU B ( Diplôme d’accès aux études universitaires / scientifique option numérique) me donnant accès à un niveau 4. Mon projet au long terme était d’entreprendre une formation de chef de projet digital, j’ai décidé par la suite en 2022, de rentrer en formation de développer web chez OpenClassroom que j’ai terminé au mois de février. Les projets réalisés durant cette formation et mon appétence à approfondir et découvrir de nouvelles connaissances me permettent de postuler à une formation de chef de projet digital par alternance. Motivée je suis prête à mettre en lien mes connaissances, mes compétences , mes valeurs et mon intérêt afin que mon projet puisse se concrétiser.            </p>
-            <a href="./CV Passarelli Morgane.pdf" class="dowload_now_link">Télécharger maintenant</a>
+            <!--
+        Anciennement aide soignante durant une période de 8ans, j’ai commencé une reconversion professionnelle en
+                2020 en suivant un DAEU B ( Diplôme d’accès aux études universitaires / scientifique option numérique)
+                me donnant accès à un niveau 4. Mon projet au long terme était d’entreprendre une formation de chef de
+                projet digital, j’ai décidé par la suite en 2022, de rentrer en formation de développer web chez
+                OpenClassroom que j’ai terminé au mois de février. Les projets réalisés durant cette formation et mon
+                appétence à approfondir et découvrir de nouvelles connaissances me permettent de postuler à une
+                formation de chef de projet digital par alternance. Motivée je suis prête à mettre en lien mes
+                connaissances, mes compétences , mes valeurs et mon intérêt afin que mon projet puisse se concrétiser.-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum asperiores similique sint placeat numquam debitis animi tempore modi laudantium, ipsam molestiae, quos rerum omnis delectus, ipsum praesentium sunt corrupti? Perferendis.
+            </p>
+            <a href="./CV Passarelli Morgane.pdf" class="dowload_now_link">Consulter mon cv</a>
         </div>
         <!--Div droite-->
         <div class="right">
-            <img src="img.jpg" alt="photo profil" class="image_profil">
+            <img src="./assets/img.jpg" alt="photo profil" class="image_profil">
         </div>
 
     </section>
 
-    <script src="script.js"></script>
 
+    <!--main
+    --->
+    <main>
+        
+
+        <section class="clipped-section" id="video">
+            <div class="clipped-video-container">
+                <!--<h2>Vidéo de motivation</h2>-->
+                <video controls src="ressources/sunset.mp4"></video>
+            </div>
+        </section>
+
+        <article>
+            <div class="title-container" id="projets">
+                <div class="bloc">
+                    <span>P</span>
+                    <span>R</span>
+                    <span>O</span>
+                    <span>J</span>
+                    <span>E</span>
+                    <span>T</span>
+                    <span>S</span>
+
+                    <div class="ligne"></div>
+                </div>
+                <!---<h1>Projets
+        </h1>-->
+                <div class="card-container">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <!---->
+                            <div class="card-front">
+                                <p>Booki</p>
+                                <!--<p class="card-price">
+                        64 € / mois
+                    </p>-->
+                                <img src="./assets/booki.jpg" alt="">
+                            </div>
+                            <div class="card-back">
+                                <p>Tranformez une maquette en site web avec HTML & CSS</p>
+                                <a href="https://github.com/PMorgane/projet2" class="btn"> Lien github</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-front">
+                                <p>Ohmyfood</p>
+                                <!-- <p class="card-price">
+                        64 € / mois
+                    </p>-->
+                                <img src="./assets/projet-2.png" alt="">
+                            </div>
+                            <div class="card-back">
+                                <p>Dynamisez une page web avec des animations CSS</p>
+                                <a href="https://github.com/PMorgane/ohmyfood" class="btn">Lien github</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-front">
+                                <p>La panthère</p>
+                                <!-- <p class="card-price">
+                        64 € / mois
+                    </p>-->
+                                <img src="./assets/projet-3.png" alt="">
+                            </div>
+                            <div class="card-back">
+                                <p>Optimisez un site web existant</p>
+                                <a href="https://github.com/PMorgane/La-panth-re-projet-4-open-classrooms"
+                                    class="btn">Lien github</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-front">
+                                <p>Piquante</p>
+                                <!-- <p class="card-price">
+                        64 € / mois
+                    </p>-->
+                                <img src="./assets/projet-4.png" alt="">
+                            </div>
+                            <div class="card-back">
+                                <p>Un site e-commerce en JavaScript</p>
+                                <a href="https://github.com/PMorgane/Piquante" class="btn"> Lien github</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-front">
+                                <p>Kanap</p>
+                                <!-- <p class="card-price">
+                        64 € / mois
+                    </p>-->
+                                <img src="./assets/projet-5.png" alt="">
+                            </div>
+                            <div class="card-back">
+                                <p>Une API sécurisée pour une application d'avis gastronomiques</p>
+                                <a href="https://github.com/PMorgane/Kanap-projet5" class="btn">Lien github</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-front">
+                                <p>Kasa</p>
+                                <img src="./assets/projet-6.png" alt="">
+                            </div>
+                            <div class="card-back">
+                                <p>Une application web de location immobilière avec React</p>
+                                <a href="https://github.com/PMorgane/Kasa_projet7" class="btn">Lien github </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="outils">
+            <div class="bloc">
+                <span>O</span>
+                <span>U</span>
+                <span>T</span>
+                <span>I</span>
+                <span>L</span>
+                <span>S</span>
+                <div class="ligne"></div>
+            </div>
+            <div class="fond-container">
+                <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <i class="fa-brands fa-sass fa-3x"></i>
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <i class="fa-brands fa-js fa-3x"></i>
+                <i class="fa-brands fa-react fa-3x"></i>
+                <i class="fa-brands fa-git-alt fa-3x"></i>
+                <i class="fa-brands fa-figma fa-3x"></i>
+                <i class="fa-brands fa-wordpress fa-3x"></i>
+                <i class="fa-brands fa-elementor fa-3x"></i>
+                <i class="fa-regular fa-file-word fa-3x"></i>
+                <i class="fa-solid fa-file-excel fa-3x"></i>
+                <i class="fa-solid fa-file-powerpoint fa-3x"></i>
+            </div>
+        </article>
+        <footer>
+            <div class="contact">
+                <div class="bloc">
+                    <span>C</span>
+                    <span>O</span>
+                    <span>N</span>
+                    <span>T</span>
+                    <span>A</span>
+                    <span>C</span>
+                    <span>T</span>
+                    <div class="ligne"></div>
+                </div>
+                    <div class="fond">
+                        <a href="mailto:passarellimorgane43@gmail.com"><i class="fa-regular fa-envelope fa-3x"></i></a>
+                        <a href="https://github.com/PMorgane"><i class="fa-brands fa-github fa-3x"></i></a>
+                        <a href="https://github.com/PMorgane"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+        
+                    </div>
+                </div>
+        </footer>
+       
+    
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
 </body>
 <footer>
-   
+
 </footer>
+
 </html>
