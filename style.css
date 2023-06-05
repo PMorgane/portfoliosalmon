@@ -472,7 +472,8 @@ footer{
     }
     .right img {
         padding-top: 50px;
-        width: 75%;
+        width:100%;
+        height: auto;
     }
     .right,
     .container {
@@ -547,6 +548,7 @@ footer{
     }
 
     header .menu.responsive li {
+        text-decoration: none;
         margin: 10px 0;
         text-align: center ;
     }
