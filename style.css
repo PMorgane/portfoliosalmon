@@ -168,7 +168,7 @@ header {
 
 /**/
 .right {
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -359,6 +359,7 @@ h1 {
 }
 
 .bloc {
+    transition: 0.2s;
     background-color: transparent;
     position: relative;
     top:45%;
@@ -439,7 +440,15 @@ footer{
 .fa-brands fa-github,.fa-brands fa-linkedin {
     color: white;
 }*/
-
+.reveal{
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.reveal-visible{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: 0.3s;
+}
 @media (max-width:770px) {
     header .menu {
         display: none;
@@ -567,5 +576,10 @@ footer{
     }
     .ligne{
         height: 4px;
+    }
+}
+@media (min-width:770px) and (max-width: 800px){
+    .right img{
+        width: 45%;
     }
 }

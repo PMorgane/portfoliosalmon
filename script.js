@@ -65,3 +65,12 @@ TLLetters
 
 .from (allLetters,{opacity:0, top: gsap.utils.wrap([100,-100]),stagger:0.1, ease:"power2.out"})
 .set(ligne,{width:"85vw"})
+
+/* affichage au scroll*/
+
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold:0.1
+}
+
