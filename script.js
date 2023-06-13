@@ -65,12 +65,33 @@ TLLetters
 
 .from (allLetters,{opacity:0, top: gsap.utils.wrap([100,-100]),stagger:0.1, ease:"power2.out"})
 .set(ligne,{width:"85vw"})
-
 /* affichage au scroll*/
+/*
+const slidingBloc = document.querySelector(".bloc");
+window.addEventListener("scroll",()=>{
+    const {scrollTop, clientHeight}= document.documentElement;
+    
+   const topElementToTopViewport= slidingBloc.getBoundingClientRect().top;
+     if (scrollTop > (scrollTop + topElementToTopViewport).toFixed()-clientHeight*0.5) {
+        slidingBloc.classList.add('active')
+     }
 
+})*/
+
+
+/*
 const options = {
     root: null,
     rootMargin: '0px',
     threshold:0.1
 }
 
+const handleIntersect = function (entries, observer) {
+    entries.forEach(function(entry){
+        console.log(entry.intersectionRatio); 
+    })
+   
+}
+
+const observer = new IntersectionObserver(handleIntersect, options);
+observer.observe(document.querySelector('.reveal'));*/
