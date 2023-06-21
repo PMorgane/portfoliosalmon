@@ -153,6 +153,7 @@ header {
 }
 
 .left a {
+    text-align: center;
     margin-top: 20px;
     border: 1px solid salmon;
     text-decoration: 0;
